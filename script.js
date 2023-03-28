@@ -11,7 +11,7 @@ $("#gen").on("click", function () {
       const random = [];
       for (let i = 0; i < 16; i++) random.push(Math.floor(Math.random() * rand.length))
       const moji = random.map(x => rand[x]).join("")
-      paypays.push(`<a href="https://discord.gift/${moji}">https://discord.gift/${moji}</a>`);
+      paypays.push(`<a href="https://discord.gift/${moji}" target="_blank">https://discord.gift/${moji}</a>`);
     };
     result.html(paypays.join("<br />"))
   })
